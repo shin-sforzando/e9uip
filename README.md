@@ -13,7 +13,6 @@ GitHub Template Repository for General Use.
 
 - [Prerequisites](#prerequisites)
 - [How to](#how-to)
-  - [Build Setup](#build-setup)
   - [Setup](#setup)
   - [Develop](#develop)
   - [Run](#run)
@@ -24,6 +23,9 @@ GitHub Template Repository for General Use.
     - [CHANGELOG.md](#changelogmd)
 - [Misc](#misc)
 - [Notes](#notes)
+  - [Git](#git)
+    - [Commitizen](#commitizen)
+    - [Semantic Pull Request](#semantic-pull-request)
   - [LICENSE](#license)
   - [Contributors](#contributors)
 
@@ -37,57 +39,42 @@ GitHub Template Repository for General Use.
 
 ## How to
 
-### Build Setup
-
-```bash
-# install dependencies
-$ npm install
-
-# serve with hot reload at localhost:3000
-$ npm run dev
-
-# build for production and launch server
-$ npm run build
-$ npm run start
-
-# generate static project
-$ npm run generate
-```
-
 ### Setup
 
 ```shell
-(T.B.D.)
+make up
 ```
 
 ### Develop
 
+You can also enter the container with the following command.
+
 ```shell
-(T.B.D.)
+make shell
 ```
 
 ### Run
 
 ```shell
-(T.B.D.)
+make start
 ```
 
 ### Lint
 
 ```shell
-(T.B.D.)
+make lint
 ```
 
 ### Test
 
 ```shell
-(T.B.D.)
+make test
 ```
 
 ### Deploy
 
 ```shell
-(T.B.D.)
+make deploy
 ```
 
 ### Document
@@ -106,7 +93,20 @@ cz changelog
 
 ## Notes
 
+### Git
+
+#### Commitizen
+
 This repository is [Commitizen](https://commitizen.github.io/cz-cli/) friendly.
+Use the following command to commit.
+
+```shell
+cz c
+```
+
+#### Semantic Pull Request
+
+(T. B. D.)
 
 ### LICENSE
 
