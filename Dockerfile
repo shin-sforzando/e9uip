@@ -1,15 +1,15 @@
 FROM node:14-alpine
 
-RUN apk update && apk upgrade
+RUN apk --no-cache add --virtual=dev-tools git
 
 WORKDIR /app
 
-COPY --chown=node:node package*.json ./
+COPY package*.json ./
 
-RUN npm install
+RUN npm install --no-optional && npm cache clean --force
 
-COPY --chown=node:node . .
+ENV PATH /app/node_modules/.bin:$PATH
 
-USER node
+COPY . .
 
-CMD ["npm", "run", "dev"]
+CMD ["nuxt-ts"]
