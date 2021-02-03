@@ -1,6 +1,7 @@
-# broad-boilerplate
+# e9uip
 
-[![Bump Version](https://github.com/shin-sforzando/broad-boilerplate/workflows/Bump%20Version/badge.svg)](https://github.com/shin-sforzando/broad-boilerplate/actions?query=workflow:%22Bump+Version%22)
+[![ci](https://github.com/shin-sforzando/e9uip/workflows/ci/badge.svg)](https://github.com/shin-sforzando/e9uip/actions?query=workflow:ci)
+[![Bump Version](https://github.com/shin-sforzando/e9uip/workflows/Bump%20Version/badge.svg)](https://github.com/shin-sforzando/e9uip/actions?query=workflow:%22Bump+Version%22)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
@@ -8,8 +9,7 @@
 |:---:|:---:|
 |Screenshot 1|Screenshot 2|
 
-<!-- Synopsis is here! -->
-GitHub Template Repository for General Use.
+Office Equipment Management System.
 
 - [Prerequisites](#prerequisites)
 - [How to](#how-to)
@@ -22,7 +22,6 @@ GitHub Template Repository for General Use.
   - [Document](#document)
     - [CHANGELOG.md](#changelogmd)
 - [Misc](#misc)
-- [Notes](#notes)
   - [Git](#git)
     - [Commitizen](#commitizen)
     - [Semantic Pull Request](#semantic-pull-request)
@@ -31,11 +30,9 @@ GitHub Template Repository for General Use.
 
 ## Prerequisites
 
-- A (Version x.y.z or higher)
-  - B
-  - C
-- D
-  - E
+- Docker (Version `20.10.2` or higher)
+  - docker-compose (Version `1.27.4` or higher)
+- [Nuxt-Edge](https://www.npmjs.com/package/nuxt-edge)
 
 ## How to
 
@@ -90,8 +87,6 @@ cz changelog
 ```
 
 ## Misc
-
-## Notes
 
 ### Git
 

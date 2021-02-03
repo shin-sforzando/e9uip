@@ -1,8 +1,9 @@
 FROM node:14-alpine
 
-RUN apk --no-cache add --virtual=dev-tools git
+RUN apk --no-cache add --virtual=dev-tools git make
 
 WORKDIR /app
+RUN chmod g+w /app
 
 COPY package*.json ./
 
