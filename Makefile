@@ -19,19 +19,19 @@ logs:
 	$(CMD_DOCKER_COMPOSE) logs ${ARGS} --timestamp
 
 build: up
-	$(CMD_DOCKER_COMPOSE) exec ${ARGS} $(CONTAINER_NUXT) npm run build
+	$(CMD_DOCKER_COMPOSE) exec ${ARGS} $(CONTAINER_NUXT) yarn build
 
 start: build
-	$(CMD_DOCKER_COMPOSE) exec ${ARGS} --detach $(CONTAINER_NUXT) npm run start
+	$(CMD_DOCKER_COMPOSE) exec ${ARGS} --detach $(CONTAINER_NUXT) yarn start
 
 lint: up
-	$(CMD_DOCKER_COMPOSE) exec ${ARGS} $(CONTAINER_NUXT) npm run lint
+	$(CMD_DOCKER_COMPOSE) exec ${ARGS} $(CONTAINER_NUXT) yarn lint
 
 test: up
-	$(CMD_DOCKER_COMPOSE) exec ${ARGS} $(CONTAINER_NUXT) npm run test
+	$(CMD_DOCKER_COMPOSE) exec ${ARGS} $(CONTAINER_NUXT) yarn test
 
 generate: up
-	$(CMD_DOCKER_COMPOSE) exec ${ARGS} $(CONTAINER_NUXT) npm run generate
+	$(CMD_DOCKER_COMPOSE) exec ${ARGS} $(CONTAINER_NUXT) yarn generate
 
 deploy: generate
 	echo "TODO: Not Implemented Yet!"
