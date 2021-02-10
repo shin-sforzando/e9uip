@@ -1,4 +1,4 @@
-## 0.1.1 (2021-02-10)
+## Unreleased
 
 ### Refactor
 
@@ -6,7 +6,9 @@
 
 ## 0.1.1 (2021-02-09)
 
-## 0.1.0 (2021-02-07)
+### Fix
+
+- **deps**: bump actions/setup-node from v2.1.2 to v2.1.4
 
 ### Perf
 
