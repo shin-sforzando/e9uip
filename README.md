@@ -77,7 +77,7 @@ make deploy
 ### Document
 
 ```shell
-(T.B.D.)
+(T. B. D.)
 ```
 
 #### CHANGELOG.md
