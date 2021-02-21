@@ -6,7 +6,6 @@ WORKDIR /app
 RUN chmod g+w /app
 
 COPY package*.json ./
-COPY .yarnclean ./
 
 RUN yarn install --ignore-optional
 
