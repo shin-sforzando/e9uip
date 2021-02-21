@@ -13,6 +13,7 @@ Office Equipment Management System.
 
 - [Prerequisites](#prerequisites)
 - [How to](#how-to)
+  - [Help](#help)
   - [Setup](#setup)
   - [Develop](#develop)
   - [Run](#run)
@@ -35,6 +36,29 @@ Office Equipment Management System.
 - [Nuxt-Edge](https://www.npmjs.com/package/nuxt-edge)
 
 ## How to
+
+### Help
+
+```shell
+$ make help
+ps                   監視
+up                   起動
+renew                更新
+open                 閲覧
+shell                接続
+logs                 記録
+build                構築
+start                開始
+lint                 監査
+test                 試験
+generate             生成
+deploy               配備
+upgrade-interactive  解決
+down                 停止
+clean                掃除
+prune                破滅
+help                 助言
+```
 
 ### Setup
 
