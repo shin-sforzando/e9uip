@@ -8,8 +8,7 @@ RUN chmod g+w /app
 COPY package*.json ./
 COPY .yarnclean ./
 
-RUN yarn install --ignore-optional && \
-    yarn autoclean --force
+RUN yarn install --ignore-optional
 
 ENV PATH /app/node_modules/.bin:$PATH
 
