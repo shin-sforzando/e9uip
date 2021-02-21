@@ -53,6 +53,7 @@ lint                 監査
 test                 試験
 generate             生成
 deploy               配備
+upgrade-interactive  解決
 down                 停止
 clean                掃除
 prune                破滅

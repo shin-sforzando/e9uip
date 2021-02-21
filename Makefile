@@ -4,13 +4,14 @@ CMD_DOCKER := docker
 CMD_DOCKER_COMPOSE := docker-compose
 CONTAINER_NUXT := nuxt
 
-.PHONY: ps up renew open shell log build start lint test generate deploy clean clean prune help
+.PHONY: ps up renew open shell log build start lint test generate deploy upgrade-interactive clean clean prune help
 
 ps: ## 監視
 	$(CMD_DOCKER_COMPOSE) ps
 
 up: ## 起動
 	$(CMD_DOCKER_COMPOSE) up ${ARGS} --detach --remove-orphans
+	sleep 1
 	make logs
 
 renew: down clean up ; ## 更新
@@ -41,6 +42,9 @@ generate: up ## 生成
 
 deploy: generate ## 配備
 	echo "TODO: Not Implemented Yet!"
+
+upgrade-interactive: ## 解決
+	yarn upgrade-interactive
 
 down: ## 停止
 	$(CMD_DOCKER_COMPOSE) down ${ARGS} --rmi all --remove-orphans
