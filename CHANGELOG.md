@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.2](https://github.com/shin-sforzando/e9uip/compare/v0.0.1...v0.0.2) (2021-02-22)
+
+
+### Features
+
+* :+1:  create CHANGELOG.md ([8014f14](https://github.com/shin-sforzando/e9uip/commit/8014f14a25388cc8d0aeeb1cd049a0ac2c0ae4fd))
+
 ### 0.0.1 (2021-02-22)
 
 
