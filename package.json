@@ -1,9 +1,9 @@
 {
   "name": "e9uip",
-  "version": "1.1.0",
+  "version": "0.0.1",
   "private": true,
   "scripts": {
-    "cm": "git-cz",
+    "cz": "git-cz",
     "dev": "nuxt-ts",
     "build": "nuxt-ts build",
     "start": "nuxt-ts start",
@@ -11,7 +11,10 @@
     "lint:js": "eslint --ext \".js,.vue\" --ignore-path .gitignore .",
     "lint:style": "stylelint \"**/*.{vue,css}\" --ignore-path .gitignore",
     "lint": "yarn lint:js && yarn lint:style",
-    "test": "jest"
+    "test": "jest",
+    "release:patch": "standard-version --release-as patch",
+    "release:minor": "standard-version --release-as minor",
+    "release:major": "standard-version --release-as major"
   },
   "husky": {
     "hooks": {
