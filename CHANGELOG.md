@@ -2,13 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
-### [0.0.2](https://github.com/shin-sforzando/e9uip/compare/v0.0.1...v0.0.2) (2021-02-22)
-
 ### 0.0.1 (2021-02-22)
+
 
 ### Features
 
 * **Dockerfile:** add Dockerfile, docker-compose.yml and Makefile ([899b50e](https://github.com/shin-sforzando/e9uip/commit/899b50e24470c5d5b378cfedb7996c27937f981e))
+
 
 ### Bug Fixes
 
