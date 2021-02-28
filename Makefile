@@ -4,7 +4,7 @@ CMD_DOCKER := docker
 CMD_DOCKER_COMPOSE := docker-compose
 CONTAINER_NUXT := nuxt
 
-.PHONY: ps up renew open shell log build start lint test generate deploy upgrade-interactive clean clean prune help
+.PHONY: ps up renew open shell logs build start lint test generate deploy upgrade-interactive down clean prune help
 
 ps: ## 監視
 	$(CMD_DOCKER_COMPOSE) ps
