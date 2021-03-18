@@ -4,7 +4,7 @@ CMD_DOCKER := docker
 CMD_DOCKER_COMPOSE := docker-compose
 CONTAINER_NUXT := nuxt
 
-.PHONY: ps up renew open shell logs build start lint test generate deploy upgrade-interactive down clean prune help
+.PHONY: ps up renew open shell logs follow build start lint test generate deploy upgrade-interactive down clean prune help
 
 ps: ## 監視
 	$(CMD_DOCKER_COMPOSE) ps
@@ -24,6 +24,9 @@ shell: up ## 接続
 
 logs: ## 記録
 	$(CMD_DOCKER_COMPOSE) logs ${ARGS} --timestamp
+
+follow: ## 追跡
+	$(CMD_DOCKER_COMPOSE) logs ${ARGS} --timestamp --follow
 
 build: up ## 構築
 	$(CMD_DOCKER_COMPOSE) exec ${ARGS} $(CONTAINER_NUXT) yarn build
