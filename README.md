@@ -47,6 +47,7 @@ renew                更新
 open                 閲覧
 shell                接続
 logs                 記録
+follow               追跡
 build                構築
 start                開始
 lint                 監査
