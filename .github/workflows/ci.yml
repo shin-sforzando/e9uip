@@ -32,6 +32,7 @@ jobs:
       - name: Install dependencies
         run: yarn
 
-      - run: yarn lint
+      - run: yarn lint:js
+      - run: yarn lint:style
 
       - run: yarn test
