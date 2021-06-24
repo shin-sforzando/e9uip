@@ -16,6 +16,7 @@ Office Equipment Management System.
   - [Help](#help)
   - [Setup](#setup)
   - [Develop](#develop)
+  - [Upgrade](#upgrade)
   - [Run](#run)
   - [Lint](#lint)
   - [Test](#test)
@@ -73,6 +74,12 @@ You can also enter the container with the following command.
 
 ```shell
 make shell
+```
+
+### Upgrade
+
+```shell
+make upgrade-interactive
 ```
 
 ### Run
